@@ -1,6 +1,6 @@
 | Type     | Status     |
 | :------------- | :------------- |
-| Build - CircleCI     | ![https://circleci.com/gh/robbertvancaem/form-subscriber](https://img.shields.io/circleci/project/github/robbertvancaem/form-subscriber/master.svg)       |
+| Build - CircleCI     | [![Build Status](https://img.shields.io/circleci/project/github/robbertvancaem/form-subscriber/master.svg)](https://circleci.com/gh/robbertvancaem/form-subscriber)       |
 
 
 # form-subscriber
