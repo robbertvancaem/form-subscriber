@@ -4,7 +4,8 @@
   "description": "A simple class to subscribe to changes of (form) values.",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",

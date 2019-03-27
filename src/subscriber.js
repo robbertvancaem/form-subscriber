@@ -39,18 +39,21 @@ class Subscriber {
       const obj = {
         [key]: this.getValueByType(cur)
       }
-      return Object.assign({}, agg, obj);
+      return {
+        ...agg,
+        ...obj
+      }
     }, {});
   }
 
   getValueByType(field){
     switch(field.type) {
       case 'radio':
-        const formEl = this.scope.querySelector(`[name="${field.name}"]`);
+        const formEl = this.scope.querySelector(`[name="${field.name}"]:checked`);
         if (!formEl) {
-          throw `Cannot find value for ${field.name}`;
+          return undefined;
         }
-        return formEl.checked
+        return formEl.value
       case 'checkbox':
         return field.checked;
       case 'select-one':
