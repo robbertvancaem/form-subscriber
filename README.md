@@ -1,3 +1,8 @@
+| Type     | Status     |
+| :------------- | :------------- |
+| Build - CircleCI     | ![Build status](https://img.shields.io/circleci/project/github/robbertvancaem/form-subscriber/master.svg)       |
+
+
 # form-subscriber
 
 A simple class to subscribe to changes of (form) values.
